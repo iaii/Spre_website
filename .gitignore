@@ -27,3 +27,5 @@ dist-ssr
 media/*.mp4
 public/*.mp4
 *.mp4
+
+.vite
