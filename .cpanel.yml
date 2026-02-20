@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/spresrxa/public_html/
+    - /usr/local/bin/npm ci
+    - /usr/local/bin/npm run build
+    - /bin/rsync -av --delete dist/ $DEPLOYPATH
